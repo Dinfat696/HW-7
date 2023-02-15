@@ -2,8 +2,8 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
-        /*task3();
-        task4();
+        task3();
+        /*task4();
         task5();
         task6();
         task7();
@@ -31,9 +31,24 @@ public class Main {
             System.out.print(start + " ");
             start = start + 1;
         }
-            System.out.println();
-            for (int i = 10; i > 0; i--) {
-                System.out.print(i + " ");
-            }
+        System.out.println();
+        for (int i = 10; i > 0; i--) {
+            System.out.print(i + " ");
+
         }
     }
+
+    public static void task3() {
+        System.out.println("\nЗадача 3");
+        int people=12000000;
+        int newBorn=people/1000*17;
+        int die=people/1000*8;
+        int year = 0;
+        while (year<10) {
+            year++;
+            people=people+newBorn-die;
+            System.out.println("Год " + year + " численность населения составляет " + people);
+        }
+    }
+}
+
