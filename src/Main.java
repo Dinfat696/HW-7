@@ -5,8 +5,8 @@ public class Main {
         task3();
         task4();
         task5();
-       /* task6();
-        task7();
+        task6();
+        /*task7();
         task8();
         task9();
         task10();*/
@@ -67,6 +67,18 @@ public class Main {
         int total = 15000;
         int i = 0;
         while (total < 12000000) {
+            i++;
+            total = total + total / 100 * 7;
+            if (i % 6 == 0) {
+                System.out.println("Месяц " + i + " сумма накоплений равна " + total + "рублей");
+            }
+        }
+    }
+    public static void task6() {
+        System.out.println("Задача 6");
+        int total = 15000;
+        int i = 0;
+        while (i <= 108) {
             i++;
             total = total + total / 100 * 7;
             if (i % 6 == 0) {
