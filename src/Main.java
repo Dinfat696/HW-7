@@ -6,9 +6,9 @@ public class Main {
         task4();
         task5();
         task6();
-        /*task7();
+        task7();
         task8();
-        task9();
+        /*task9();
         task10();*/
     }
 
@@ -74,6 +74,7 @@ public class Main {
             }
         }
     }
+
     public static void task6() {
         System.out.println("Задача 6");
         int total = 15000;
@@ -86,6 +87,28 @@ public class Main {
             }
         }
     }
+
+    public static void task7() {
+        System.out.println("Задача 7");
+        for (int day = 2; day <= 31; day = day + 7) {
+            System.out.println("Сегодня пятница, " + day + " -е число. Необходимо подготовить отчет");
+        }
+    }
+
+    public static void task8() {
+        System.out.println("Задача 8");
+        for (int year = 0; year <= 2150; year = year + 79) {
+            if (year > 1850 && year < 2100) {
+                System.out.println(year);
+            }
+        }
+    }
 }
+
+
+
+
+
+
 
 
