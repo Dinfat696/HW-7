@@ -3,8 +3,8 @@ public class Main {
         task1();
         task2();
         task3();
-        /*task4();
-        task5();
+        task4();
+        /*task5();
         task6();
         task7();
         task8();
@@ -50,5 +50,16 @@ public class Main {
             System.out.println("Год " + year + " численность населения составляет " + people);
         }
     }
+    public static void task4() {
+        System.out.println("Задача 4");
+        int total = 15000;
+        int i=0;
+        while (total <12000000) {
+            i++;
+            total = total+total/100*7;
+            System.out.println("Месяц " +i+ " сумма накоплений равна " + total + "рублей");
+        }
+    }
+
 }
 
